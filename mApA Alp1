@@ -1,0 +1,32 @@
+Algoritmo mapa_alp1
+	Var a, c, p : inteiro
+Início
+	Repita 
+		Escreva(“André! Sua vez de jogar:”)
+		Leia(a)
+	Até_que (a = 1) ou (a = 2)
+	Repita 
+		Escreva(“Carlos! Sua vez de jogar:”)
+		Leia(c)
+	Até_que (c = 1) ou (c = 2)
+	Repita 
+		Escreva(“Pietro! Sua vez de jogar:”)
+		Leia(p)
+	Até_que (p = 1) ou (p = 2)
+	Se (a = 2) e (c = 1) e (p = 1) ou (a = 1) e (c = 2) e (p = 2) então
+    	Escreva ("A")
+	Senão
+		Se(a = 1) e (c = 2) e (p = 1) ou (a = 2) e (c = 1) e (p = 2) então
+			Escreva ("C")
+		Senão
+			Se (a = 1) e (c = 1) e (p = 2) ou (a = 2) e (c = 2) e (p = 1) então 
+				Escreva ("P")
+			Senão
+				Escreva ("X")
+			Fim_se	
+		Fim_se	
+	Fim_se	
+Fim
+    
+
+          
